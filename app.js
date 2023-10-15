@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
-const PORT = 3000
+const PORT = process.env.PORT||3000
 const MONGO_URI='mongodb+srv://purnashis:purnashis@cluster0.kt5n8.mongodb.net/sportscom?authSource=admin&replicaSet=atlas-obxnrc-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
 const GOOGLE_CLIENT_ID = '1095817107830-ffjlbdh9fikia782ieopac9db8hglio2.apps.googleusercontent.com'
 const GOOGLE_CLIENT_SECRET = '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'
